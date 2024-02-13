@@ -31,7 +31,7 @@ class ShillelaghEngineSpec(SqliteEngineSpec):
     engine = "shillelagh"
     drivers = {"apsw": "SQLite driver"}
     default_driver = "apsw"
-    sqlalchemy_uri_placeholder = "shillelagh://"
+    sqlalchemy_uri_placeholder = "shillelagh+safe://"
 
     allows_joins = True
     allows_subqueries = True
